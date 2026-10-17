@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#172f49">
+<title>Тверь — вход в демонстрацию</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6fa;color:#172f49;font:16px/1.6 "Segoe UI",Arial,sans-serif;min-height:100dvh;display:grid;place-items:center;padding:24px}.entry{width:100%;max-width:440px}.mark{display:flex;gap:13px;align-items:center;margin-bottom:30px}.symbol{width:44px;height:44px;border-radius:9px;background:#245fcc;display:grid;place-items:center;color:white;font-size:28px;font-weight:600}.brand{font-size:22px;font-weight:650;line-height:1.25}.brand small{display:block;font-size:13px;font-weight:400;color:#667f99;margin-top:4px}.card{background:white;border:1px solid #d9e2ef;border-radius:10px;padding:30px}h1{font-size:25px;line-height:1.25;letter-spacing:-.5px;margin:0 0 12px}.intro{color:#667f99;font-size:14px;margin:0 0 25px}label{display:block;font-size:14px;font-weight:600;margin-bottom:8px}input{width:100%;border:1px solid #bdcbdc;border-radius:6px;padding:13px;font:inherit;outline:none}input:focus{border-color:#245fcc;box-shadow:0 0 0 3px #245fcc1c}button{width:100%;border:0;border-radius:6px;background:#245fcc;color:white;padding:13px 16px;font:600 15px "Segoe UI",Arial;cursor:pointer;margin-top:17px;min-height:47px}button:hover{background:#1b4fad}button:disabled{opacity:.65;cursor:wait}.error{color:#a33647;font-size:13px;margin:10px 0 0;min-height:21px}.caption{font-size:12px;color:#667f99;margin:20px 1px 0}@media(max-width:480px){body{padding:20px}.card{padding:24px}}
+</style>
+</head>
+<body>
+<main class="entry">
+  <div class="mark"><div class="symbol" aria-hidden="true">Т</div><div class="brand">Тверь<small>Сопровождение проектов</small></div></div>
+  <section class="card" aria-labelledby="entry-title">
+    <h1 id="entry-title">Открыть демонстрацию</h1>
+    <p class="intro">Введите код доступа, который вам передали вместе со ссылкой.</p>
+    <form id="access-form">
+      <label for="access-code">Код доступа</label>
+      <input id="access-code" type="password" autocomplete="current-password" required autofocus aria-describedby="access-error">
+      <p id="access-error" class="error" role="alert"></p>
+      <button id="access-submit" type="submit">Войти</button>
+    </form>
+  </section>
+  <p class="caption">Демонстрация для обсуждения процессов и согласования следующего шага.</p>
+</main>
+<script type="module" src="unlock.js"></script>
+</body>
+</html>
